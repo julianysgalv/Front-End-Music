@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta e Resposta</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="question-box">
+            <h1>Faça sua pergunta</h1>
+            
+            <div class="input-section">
+                <input type="text" id="questionInput" placeholder="Digite sua pergunta" maxlength="200">
+                <button id="submitBtn" onclick="submitQuestion()">Enviar</button>
+            </div>
+            
+            <div class="response-section" id="responseSection">
+                <div class="response-label">Resposta</div>
+                <div class="response-text" id="responseText"></div>
+                <div class="response-info">
+                    A resposta será apenas <span class="highlight-sim">SIM</span> ou <span class="highlight-nao">NÃO</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
+
